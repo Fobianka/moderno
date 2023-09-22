@@ -64,15 +64,13 @@
     text-align: center;
   }
   &__inner-title {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+    @include f700;
     font-size: 48px;
     line-height: 72px;
     margin-bottom: 10px;
   }
   &__inner-text {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    @include f500;
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 50px;
@@ -84,8 +82,7 @@
     input{
       display: block;
       font-size: 14px;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 500;
+      @include f500;
       width: 100%;
       box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
       border-radius: 4px;
@@ -94,8 +91,7 @@
       padding-left: 25px;
       padding-right: 60px;
       &::placeholder{
-        font-family: 'Roboto', sans-serif;
-        font-weight: 500;
+        @include f500;
         color: #90a4ae;
       }
     }
@@ -117,8 +113,7 @@
     text-align: center;
     margin-bottom: 60px;
     button{
-      font-family: 'Roboto', sans-serif;
-      font-weight: 500;
+      @include f500;
       padding: 12px 21px;
       border: none;
       cursor: pointer;
@@ -175,8 +170,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    @include f500;
     min-height: 90px;
     color: $dark;
     padding: 10px 30px;
@@ -224,8 +218,7 @@
       margin-right: 14px;
     }
     span{
-      font-family: 'Roboto', sans-serif;
-      font-weight: 500;
+      @include f500;
       font-size: 14px;
       color: #546e7a;
     }
@@ -241,8 +234,9 @@
 
 .product-slider {
   padding: 110px 0 120px;
-  &__title {}
-  &__inner {}
+  &__inner{
+    padding-top: 20px;
+  }
   .slick-dots{
     text-align: center;
     margin-top: 60px;
@@ -265,6 +259,60 @@
         cursor: pointer;
       }
     }
+  }
+}
+
+.advantages {
+  background-color: $dark;
+  padding: 110px 0;
+  &__title {
+    color: #fff;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+  }
+  &__item {
+    max-width: 379px;
+    text-align: center;
+    padding: 0 15px;
+    &:hover{
+      .advantages__item-img{
+        background-color: $green;
+        path{
+          stroke: #fff;
+        }
+      }
+      .advantages__item-title{
+        color: $green;
+      }
+    }
+  }
+  &__item-img {
+    width: 114px;
+    height: 114px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px;
+    transition: all .3s ease-in-out;
+    path{
+      transition: all .3s ease-in-out;
+    }
+  }
+  &__item-title {
+    @include f500;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 25px;
+    color: #fff;
+    transition: all .3s ease-in-out;
+  }
+  &__item-text {
+    color: #b0bec5;
   }
 }
 
