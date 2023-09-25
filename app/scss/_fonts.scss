@@ -33,14 +33,71 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.ic_envelope-o:before {
+  content: "\f003";
+}
+.ic_user:before {
+  content: "\f007";
+}
+.ic_close:before {
+  content: "\f00d";
+}
+.ic_remove:before {
+  content: "\f00d";
+}
+.ic_times:before {
+  content: "\f00d";
+}
+.ic_lock:before {
+  content: "\f023";
+}
 .ic_map-marker:before {
   content: "\f041";
+}
+.ic_edit:before {
+  content: "\f044";
+}
+.ic_pencil-square-o:before {
+  content: "\f044";
 }
 .ic_shopping-cart:before {
   content: "\f07a";
 }
+.ic_heart-o:before {
+  content: "\f08a";
+}
 .ic_phone:before {
   content: "\f095";
+}
+.ic_twitter:before {
+  content: "\f099";
+}
+.ic_facebook:before {
+  content: "\f09a";
+}
+.ic_facebook-f:before {
+  content: "\f09a";
+}
+.ic_bell-o:before {
+  content: "\f0a2";
+}
+.ic_group:before {
+  content: "\f0c0";
+}
+.ic_users:before {
+  content: "\f0c0";
+}
+.ic_caret-down:before {
+  content: "\f0d7";
+}
+.ic_linkedin:before {
+  content: "\f0e1";
+}
+.ic_comment-o:before {
+  content: "\f0e5";
+}
+.ic_comments-o:before {
+  content: "\f0e6";
 }
 .ic_bolt:before {
   content: "\f0e7";
@@ -48,9 +105,45 @@ i {
 .ic_flash:before {
   content: "\f0e7";
 }
+.ic_suitcase:before {
+  content: "\f0f2";
+}
 .ic_angle-right:before {
   content: "\f105";
 }
+.ic_angle-down:before {
+  content: "\f107";
+}
+.ic_mail-reply:before {
+  content: "\f112";
+}
+.ic_reply:before {
+  content: "\f112";
+}
+.ic_meh-o:before {
+  content: "\f11a";
+}
 .ic_location-arrow:before {
   content: "\f124";
+}
+.ic_cny:before {
+  content: "\f157";
+}
+.ic_jpy:before {
+  content: "\f157";
+}
+.ic_rmb:before {
+  content: "\f157";
+}
+.ic_yen:before {
+  content: "\f157";
+}
+.ic_foursquare:before {
+  content: "\f180";
+}
+.ic_pagelines:before {
+  content: "\f18c";
+}
+.ic_pinterest-p:before {
+  content: "\f231";
 }
