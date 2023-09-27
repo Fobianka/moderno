@@ -55,4 +55,16 @@ body{
   margin-right: 13px;
 }
 
-
+.angle-right{
+  position: relative;
+  padding-left: 15px;
+  &::before{
+    content: '\f105';
+    font-family: 'icons';
+    position: absolute;
+    left: 0;
+    top: -1px;
+    color: $green;
+    font-size: 14px;
+  }
+}
