@@ -8,7 +8,14 @@ $(function () {
     $('.menu__list').slideToggle();
   });
 
-
+  $('.product-one__tabs .tab').on('click', function(event) {
+    var id = $(this).attr('data-id');
+      $('.product-one__tabs').find('.tab-item').removeClass('active-tab').hide();
+      $('.product-one__tabs .tabs').find('.tab').removeClass('active');
+      $(this).addClass('active');
+      $('#'+id).addClass('active-tab').fadeIn();
+      return false;
+    });
 
   $(".rate-star").rateYo({
     rating: 5,
@@ -22,12 +29,14 @@ $(function () {
     slidesToShow: 4,
     slidesToScroll: 4
   });
-  
+
+
+
+
 
   Fancybox.bind('[data-fancybox]', {
     // Custom options for all galleries
   });
-
 
   // mixitup all last
   var mixer = mixitup('.products__inner-box');

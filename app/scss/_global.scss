@@ -69,3 +69,34 @@ body{
     font-size: 14px;
   }
 }
+
+.breadcrumbs {
+  padding: 45px 0 40px;
+  background-color: $bg-grey;
+  &__list {
+    li{
+      display: inline-block;
+      font-size: 15px;
+      line-height: 18px;
+      padding-right: 13px;
+      margin-right: 8px;
+      color: #b0bec5;
+      position: relative;
+      &::after{
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 5px;
+        right: 0;
+        bottom: 8px;
+        background-color: $green;
+      }
+      &:last-child{
+        color: $dark;
+        &::after{
+          display: none;
+        }
+      }
+    }
+  }
+}
