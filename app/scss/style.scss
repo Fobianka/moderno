@@ -1239,6 +1239,99 @@
   }
 }
 
+.page-404 {
+  background-color: $bg-grey;
+  padding-bottom: 150px;
+  &__head {
+    @include f500;
+    font-size: 24px;
+    line-height: 28px;
+    border: 1px solid #dcdcdc;
+    background-color: #fff;
+    padding: 23px 27px;
+  }
+  &__inner {
+    color: #fff;
+    text-align: center;
+    background-color: $green;
+  }
+  &__num {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 300px;
+    line-height: 330px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      background-image: url('../images/page-404.png');
+      width: 150px;
+      height: 292px;
+      margin-left: 15px;
+    }
+  }
+  &__title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+    margin-bottom: 30px;
+  }
+  &__text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    max-width: 525px;
+    margin: 0 auto;
+    margin-bottom: 55px;
+  }
+  &__link {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 20px 30px 18px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    margin-bottom: 100px;
+  }
+}
+
+.about {
+  &__wrapper {
+    border: 1px solid #dcdcdc;
+  }
+  &__head {
+    border-bottom: 1px solid #dcdcdc;
+    @include f500;
+    font-size: 24px;
+    line-height: 28px;
+    background-color: #fff;
+    padding: 23px 27px;
+  }
+  &__inner {
+    background-color: #fff;
+    padding: 40px 50px 45px;
+  }
+  &__box {
+    & + &{
+      margin-top: 35px;
+    }
+    h3{
+      @include f700;
+      font-size: 20px;
+      color: #444;
+      margin-bottom: 15px;
+    }
+    p{
+      color: #707070;
+    }
+  }
+}
+
 
 
 
