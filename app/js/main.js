@@ -17,6 +17,9 @@ $(function () {
       return false;
     });
 
+    $('input[type="file"], select').styler();
+
+
   $(".rate-star").rateYo({
     rating: 5,
     starWidth: "12px",

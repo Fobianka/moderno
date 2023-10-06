@@ -1716,11 +1716,144 @@
     background-repeat: repeat;
   }
 }
-
-
-
-
 // profile end
+
+// upload start
+.upload__inner{
+  background-color: #fff;
+  border: 1px solid #d7d7d7;
+  margin-bottom: 110px;
+  button{
+    color: #fff;
+    background-color: $green;
+    border: none;
+    cursor: pointer;
+    padding: 15px 36px;
+    margin-left: 175px;
+  }
+}
+.upload__inner-title{
+  @include f500;
+  font-size: 24px;
+  line-height: 28px;
+  padding: 16px 35px;
+  border-bottom: 1px solid #d7d7d7;
+  margin-bottom: 40px;
+}
+.upload__inner-content{
+  margin-bottom: 30px;
+  padding-left: 45px;
+  padding-right: 50px;
+}
+.upload-line{
+  display: flex;
+  margin-bottom: 25px;
+  label{
+    min-width: 175px;
+    padding-top: 5px;
+    padding-right: 15px;
+    color: #444;
+    span{
+      color: $green;
+    }
+    &::placeholder{
+      color: #707070;
+    }
+  }
+  select,
+  input,
+  textarea{
+    width: 100%;
+    display: block;
+    border: 1px solid #d7d7d7;
+    height: 40px;
+    background-color: #f9f9f9;
+    padding: 0 18px;
+  }
+  textarea{
+    resize: none;
+    height: 150px;
+    padding: 8px 18px;
+  }
+  .jq-file{
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+    border: 1px solid #d7d7d7;
+    height: 40px;
+    background-color: #f9f9f9;
+  }
+  .jq-file__name{
+    font-size: 12px;
+    line-height: 40px;
+    height: 40px;
+    background: transparent;
+    box-shadow: none;
+    color: #707070;
+    border-radius: 0;
+    border: none;
+    border-bottom-color: transparent;
+    padding: 0 18px;
+    margin-left: 95px;
+  }
+  input[type="file"]{
+    outline: none;
+  }
+  .jq-file__browse{
+    font-size: 12px;
+    line-height: 26px;
+    box-shadow: none;
+    text-shadow: none;
+    background: #fff;
+    border-radius: 0;
+    border: 1px solid #d7d7d7;
+    color: #444;
+    padding: 0 12px;
+    top: 5px;
+    right: auto;
+    left: 9px;
+  }
+  .jq-selectbox{
+    width: 100%;
+  }
+  .jq-selectbox__select{
+    font-family: 'Roboto-Regular', sans-serif;
+    height: 40px;
+    padding: 0 18px;
+    border: 1px solid #d7d7d7;
+    border-bottom-color: #d7d7d7;
+    border-radius: 0;
+    background: #f9f9f9;
+    box-shadow: none;
+    text-shadow: none;
+    color: #707070;
+    line-height: 38px;
+  }
+  .jq-selectbox__trigger-arrow{
+    border: none;
+    line-height: 40px;
+    right: 20px;
+    top: 0;
+    font-size: 15px;
+    &::before{
+      content: '\f0d7';
+      font-family: 'icons';
+    }
+  }
+  .jq-selectbox__trigger{
+    border-left: 1px solid #d7d7d7;
+  }
+}
+
+
+
+
+
+
+
+
+
+// upload end
 
 
 @import 'media';

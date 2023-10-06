@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
   <link href="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.theme.min.css">
   <link rel="stylesheet" href="css/style.min.css">
@@ -45,21 +45,24 @@
                   <span>8</span>
                 </a>
                 <div class="circle__menu notification__menu">
-                  <a class="circle__item ic_bell-o icons-color" href="#">
+                  <a class="circle__item ic_bell-o icons-color"
+                  href="#">
                     <img class="circle__img" src="images/content/message-user-1.jpg" alt="images">
                     <div class="circle__info">
                       <div class="circle__info-theme">Need WP Help!</div>
                       <div class="circle__info-date">01 Dec, 2016</div>
                     </div>
                   </a>
-                  <a class="circle__item ic_bell-o" href="#">
+                  <a class="circle__item ic_bell-o"
+                  href="#">
                     <img class="circle__img" src="images/content/message-user-2.jpg" alt="images">
                     <div class="circle__info">
                       <div class="circle__info-theme">Need WP Help!</div>
                       <div class="circle__info-date">26 Nov, 2016</div>
                     </div>
                   </a>
-                  <a class="circle__item ic_bell-o" href="#">
+                  <a class="circle__item ic_bell-o"
+                  href="#">
                     <img class="circle__img" src="images/content/message-user-3.jpg" alt="images">
                     <div class="circle__info">
                       <div class="circle__info-theme">Psd Template Help!</div>
@@ -237,191 +240,108 @@
           <div class="breadcrumbs__inner">
             <ul class="breadcrumbs__list">
               <li><a href="#">Home</a></li>
-              <li><span>Product Page</span></li>
+              <li><span>Upload Product</span></li>
             </ul>
           </div>
         </div>
       </div>
-      <section class="profile">
+      <section class="upload">
         <div class="container">
-          <div class="profile__inner">
-            <div class="profile__aside">
-              <div class="aside__item">
-                <h3 class="aside__title">
-                  Product Author
-                </h3>
-                <div class="product-author__box">
-                  <div class="author__avatar">
-                    <img src="images/content/author-ava.jpg" alt="images">
-                  </div>
-                  <div class="author__info">
-                    <p class="author__name">PsdBoss</p>
-                    <div class="profile-status profile-on">Online</div>
-                  </div>
+          <form>
+            <div class="upload__inner">
+              <h3 class="upload__inner-title">
+                Upload Your item
+              </h3>
+              <div class="upload__inner-content">
+                <div class="upload-line">
+                  <label>
+                    Select Categories 
+                    <span>*</span>
+                  </label>
+                  <select>
+                    <option>Select</option>
+                    <option>Select</option>
+                    <option>Select</option>
+                    <option>Select</option>
+                  </select>
                 </div>
-                <ul class="author__awards-list">
-                  <li class="ic_meh-o"></li>
-                  <li class="ic_pagelines"></li>
-                  <li class="ic_bolt"></li>
-                  <li class="ic_foursquare"></li>
-                  <li class="ic_yen"></li>
-                </ul>
-              </div>
-              <ul class="footer__social-list">
-                <li class="footer__social-item">
-                  <a class="link-facebook" href="#"></a>
-                </li>
-                <li class="footer__social-item">
-                  <a class="link-twitter" href="#"></a>
-                </li>
-                <li class="footer__social-item">
-                  <a class="link-youtube" href="#"></a>
-                </li>
-                <li class="footer__social-item">
-                  <a class="link-linkedin" href="#"></a>
-                </li>
-              </ul>
-              <div class="profile__aside-buttons">
-                <a class="profile__aside-message" href="#">Send Message</a>
-                <a class="profile__aside-following" href="#">Following</a>
-              </div>
-            </div>
-            <div class="profile__content">
-              <div class="profile__banner">
-                <div class="profile__banner-img" style="background-image: url(images/content/banner.jpg);"></div>
-              </div>
-              <div class="profile__items">
-                <div class="profile__item">
-                  <div class="profile__item-title">Country:</div>
-                  <div class="profile__item-content">England</div>
+                <div class="upload-line">
+                  <label>
+                    Product Name 
+                    <span>*</span>
+                  </label>
+                  <input type="text" placeholder="Enter your product name here ..." required>
                 </div>
-                <div class="profile__item">
-                  <div class="profile__item-title">Member Since:</div>
-                  <div class="profile__item-content">December 26, 2014</div>
+                <div class="upload-line">
+                  <label>
+                    Product Description 
+                    <span>*</span>
+                  </label>
+                  <textarea placeholder="<h1> Type your text  here </h1/>" required></textarea>
                 </div>
-                <div class="profile__item">
-                  <div class="profile__item-title">Author Rating:</div>
-                  <div class="profile__item-content">
-                    <div class="rate-star"></div>
-                    <span class="product__item-starnum">(05)</span>
-                  </div>
+                <div class="upload-line">
+                  <label>
+                    Upload Main File 
+                    <span>*</span>
+                  </label>
+                  <input type="file" required data-placeholder="No File Choosen" data-browse="Choose File">
                 </div>
-                <div class="profile__item">
-                  <div class="profile__item-title">Total Sales:</div>
-                  <div class="profile__item-content profile__item-sales">$ 5,030</div>
+                <div class="upload-line">
+                  <label>
+                    Upload Screenshots 
+                    <span>*</span>
+                  </label>
+                  <input type="file" required data-placeholder="No File Choosen" data-browse="Choose File">
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="settings profile-settings">
-        <div class="container">
-          <div class="product-one__tabs settings__tabs">
-            <div class="tabs">
-              <span class="tab active ic_user" data-id="1">About Me</span>
-              <span class="tab ic_suitcase" data-id="2">Products ( 10 )</span>
-              <span class="tab ic_envelope-o" data-id="3">Message Box</span>
-              <span class="tab ic_comments-o" data-id="4">Customer Reviews ( 20 )</span>
-              <span class="tab ic_users" data-id="5">Followers (100 )</span>
-            </div>
-            <div class="tab_content">
-              <div class="tab-item active-tab" id="1">
-                <div class="personal-box">
-                  <h4 class="personal-box__title">
-                    About Me:
-                  </h4>
-                  <p class="personal-box__text">
-                    Bimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.
-                  </p>
-                  <h4 class="personal-box__title">
-                    Skills:
-                  </h4>
-                  <div class="personal-box__items">
-                    <div class="personal-box__item">
-                      <div class="personal-box__item-top">
-                        <h5 class="personal-box__item-name">
-                          Graphic Design
-                        </h5>
-                        <div class="personal-box__item-num">
-                          80%
-                        </div>
-                      </div>
-                      <div class="personal-box__item-line">
-                        <span style="max-width: 80%;"></span>
-                      </div>
-                    </div>
-                    <div class="personal-box__item">
-                      <div class="personal-box__item-top">
-                        <h5 class="personal-box__item-name">
-                          WordPress
-                        </h5>
-                        <div class="personal-box__item-num">
-                          90%
-                        </div>
-                      </div>
-                      <div class="personal-box__item-line">
-                        <span style="max-width: 90%;"></span>
-                      </div>
-                    </div>
-                    <div class="personal-box__item">
-                      <div class="personal-box__item-top">
-                        <h5 class="personal-box__item-name">
-                          Joomla
-                        </h5>
-                        <div class="personal-box__item-num">
-                          70%
-                        </div>
-                      </div>
-                      <div class="personal-box__item-line">
-                        <span style="max-width: 70%;"></span>
-                      </div>
-                    </div>
-                  </div>
+                <div class="upload-line">
+                  <label>
+                    File Included 
+                    <span>*</span>
+                  </label>
+                  <select>
+                    <option>Select File Type</option>
+                    <option>Select File Type</option>
+                    <option>Select File Type</option>
+                    <option>Select File Type</option>
+                  </select>
+                </div>
+                <div class="upload-line">
+                  <label>
+                    File Dimensions 
+                    <span>*</span>
+                  </label>
+                  <input type="text" placeholder="Enter the item  dimentionss here ..." required>
+                </div>
+                <div class="upload-line">
+                  <label>
+                    Item Tags 
+                    <span>*</span>
+                  </label>
+                  <input type="text" placeholder="Enter Tag Here" required>
                 </div>
               </div>
-              <div class="tab-item" id="2">
-                <div class="personal-box">
-                  <h4 class="personal-box__title">
-                    Products:
-                  </h4>
-                  <p class="personal-box__text">
-                    Bimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.
-                  </p>
+              <h3 class="upload__inner-title">
+                Set Your Price (US$)
+              </h3>
+              <div class="upload__inner-content">
+                <div class="upload-line">
+                  <label>
+                    Regular License 
+                    <span>*</span>
+                  </label>
+                  <input type="text" placeholder="$00.00" required>
                 </div>
-              </div>
-              <div class="tab-item" id="3">
-                <div class="personal-box">
-                  <h4 class="personal-box__title">
-                    Message:
-                  </h4>
-                  <p class="personal-box__text">
-                    Bimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.
-                  </p>
+                <div class="upload-line">
+                  <label>
+                    Extended License 
+                    <span>*</span>
+                  </label>
+                  <input type="text" placeholder="$00.00" required>
                 </div>
-              </div>
-              <div class="tab-item" id="4">
-                <div class="personal-box">
-                  <h4 class="personal-box__title">
-                    Customer:
-                  </h4>
-                  <p class="personal-box__text">
-                    Bimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.
-                  </p>
-                </div>
-              </div>
-              <div class="tab-item" id="5">
-                <div class="personal-box">
-                  <h4 class="personal-box__title">
-                    Followers:
-                  </h4>
-                  <p class="personal-box__text">
-                    Bimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.
-                  </p>
-                </div>
+                <button type="submit">Submit</button>
               </div>
             </div>
-          </div>
+          </form>
         </div>
       </section>
     </main>
@@ -434,11 +354,10 @@
                 About Company
               </h5>
               <p class="footer__col-text">
-                Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim digniSuspen disse.Fusce sit amet urna
-                iat.Praesent vel rutrum purus.
+                Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim digniSuspen disse.Fusce sit amet urna iat.Praesent vel rutrum purus.
               </p>
               <div class="footer__col-info">
-                PO Box 16122 Collins Street West
+                PO Box 16122 Collins Street West 
                 Victoria 8007 Australia
               </div>
               <a class="footer__col-info footer__info-phone" href="tel:61383766284">
@@ -535,8 +454,8 @@
 
 
   <script src="js/main.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
 </body>
 
 </html>
