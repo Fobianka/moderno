@@ -72,8 +72,11 @@ body{
 }
 
 .breadcrumbs {
-  padding: 45px 0 40px;
-  background-color: $bg-grey;
+  &__inner{
+    width: 1200px;
+    padding: 45px 0 40px;
+    overflow: hidden;
+  }
   &__list {
     li{
       display: inline-block;
@@ -100,4 +103,8 @@ body{
       }
     }
   }
+}
+
+#dialog-content{
+  display: none;
 }
